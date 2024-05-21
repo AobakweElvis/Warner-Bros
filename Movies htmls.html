@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros</title>
+    <link rel="stylesheet" href="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="C:\Users\buks Bunny\Downloads\bros logo.png">
+</head>
+
+
+<header>
+  <div class="pill-nav">
+      <a  href="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\index.html">Home</a>
+      <a class="active" href="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\Movies htmls.html">Movies</a>
+      <a href="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\TV Shows.html">TV Shows</a>
+      <a href="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\Games&Apps.html">Games&Apps</a>
+      <a  href="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\Collections.html">Collections</a>
+      <a href="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\Feedback Form.html"><i class="bi bi-pen"></i>Feedback</a>
+
+      <button class="search-button"><i class="bi bi-search"></i></button>
+  </div>
+  
+</header>
+<body>
+
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\extraction 2.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\f9.jpeg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\rio 2.jpeg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+
+
+     <h1>New Releases</h1>
+  <section class="collections-section">
+    <div class="collection-item">
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\Mai.jpeg"   alt="Mai">
+      <h2>Mai</h2>
+      <p>A Vietnamese woman has endured many difficulties in her life. When she meets her neighbour, th...</p>
+      <a href="TwoMen.html" class="btn">See More</a>
+    </div>
+
+    <div class="collection-item">
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\madu.jpeg" alt="Madu">
+      <h2>Madu</h2>
+      <p>Twelve-year-old Madu leaves his family and community in Nigeria to study at a prestigious ballet school in England.</p>
+      <a href="BigBang.html" class="btn">See More</a>
+    </div>
+
+    <div class="collection-item">
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\code 8 part 2.jpg" alt="Code 8">
+      <h2>Code 8: Part ||</h2>
+      <p>In a city where people with powers are policed and oppressed, an ex-criminal must...</p>
+      <a href="Abbott.html" class="btn">See More</a>
+    </div>
+
+    <div class="collection-item">
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\damsel poster.jpg" alt="Damsel">
+      <h2>Damsel</h2>
+      <p>A young woman agrees to marry a handsome prince only to discover it was all a trap. She is thrown into a...</p>
+      <a href="Ted.html" class="btn">See More</a>
+    </div>
+
+    <div class="collection-item">
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\inside out 2.jpeg" alt="Inside Out 2">
+      <h2>Inside Out 2</h2>
+      <p>Joy, Sadness, Anger, Fear and Disgust have been running a successful operation by all accounts. However, when...</p>
+      <a href="Ted.html" class="btn">See More</a>
+    </div>
+
+    <div class="collection-item">
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\Thelma the unicorn.jpg" alt="Thelma">
+      <h2>Thelma The Unicorn</h2>
+      <p>Thelma is a small-time pony who dreams of becoming a glamorous music star. In a pink and glitter-filled moment of fate, Thelma is...</p>
+      <a href="Ted.html" class="btn">See More</a>
+    </div>
+    
+  </section>
+
+
+  <h1>Animation Movies</h1>
+  <section class="collections-section">
+    <div class="collection-item">
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\minions.jpg"  alt="Minions">
+      <h2>Minions</h2>
+      <p>Minions Kevin, Stuart and Bob decide to find a new master. They embark on a global trip and meet Scarlett Overkill, a female super-villain...</p>
+      <a href="TwoMen.html" class="btn">See More</a>
+    </div>
+
+    <div class="collection-item">
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\frozen.jpeg" alt="Frozen">
+      <h2>Frozen</h2>
+      <p>Snow Queen Elsa inadvertently uses her power to make her kingdom experience constant wintriness.</p>
+      <a href="BigBang.html" class="btn">See More</a>
+    </div>
+
+    <div class="collection-item">
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\shrek.jpeg" alt="Shrek">
+      <h2>Shrek</h2>
+      <p>In a bid to get his land back, Shrek agrees to retrieve Princess Fiona for the fairytale-hating Lord Farquaad of Duloc, but...</p>
+      <a href="Abbott.html" class="btn">See More</a>
+    </div>
+
+    <div class="collection-item">
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\wish.jpg" alt="Wish">
+      <h2>Wish</h2>
+      <p>Young Asha makes a wish so powerful that it's answered by a cosmic force, a little ball of boundless energy called Star.</p>
+      <a href="Ted.html" class="btn">See More</a>
+    </div>
+
+    <div class="collection-item">
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\kung fu panda 4.jpg" alt="Kung Fu Panda 4">
+      <h2>Kung Fu Panda 4</h2>
+      <p>Po must train a new warrior when he's chosen to become the spiritual leader of the Valley of Peace. However, when a powerful shape-shifting sorceress...</p>
+      <a href="Ted.html" class="btn">See More</a>
+    </div>
+
+    <div class="collection-item">
+      <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\scoob!.jpeg" alt="Scoob!">
+      <h2>Scoob!</h2>
+      <p>Shaggy and Scooby learn that Dick Dastardly, a villain, is out to capture Scooby.</p>
+      <a href="Ted.html" class="btn">See More</a>
+    </div>
+   
+  </section>
+ 
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+         <img src="C:\Users\buks Bunny\Documents\GitHub\WMD-Assignment1\bros logo.png" alt="Warner Bros. Inc" class="footer-logo">
+      </div>
+      <div class="footer-col">
+        <h4>Warner Bros.Inc</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">Game&Apps</a></li>
+          <li><a href="#">Collections</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Apps</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
